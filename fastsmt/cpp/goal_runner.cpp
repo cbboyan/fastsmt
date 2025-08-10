@@ -95,8 +95,10 @@ int main(int argc, char* argv[]) {
   char* strategy = argv[1];
   char* smt_input_file = argv[2];
   char* smt_out_file = argv[3];
-  
-  Z3_ast a = Z3_parse_smtlib2_file(ctx, smt_input_file, 0, 0, 0, 0, 0, 0);    
+
+  Z3_ast_vector av = Z3_parse_smtlib2_file(ctx, smt_input_file, 0, 0, 0, 0, 0, 0);
+  Z3_ast a = Z3_ast_vector_get(ctx, av, 0);
+
   expr f(ctx, a);
 
   tactic t = fromString(ctx, strategy);
