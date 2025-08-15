@@ -12,9 +12,10 @@
 #                --num_threads 60 \
 #                --experiment_name leipzig_example
 
-python synthesis/learning.py experiments/configs/mizar/config_apprentice.json \
+#python synthesis/learning.py experiments/configs/mizar/config_apprentice.json \
+python synthesis/learning.py experiments/configs/mizar/config_mizar.json \
                 --benchmark_dir examples/mizar/min1/ \
-                --max_timeout 30 \
+                --max_timeout 15 \
                 --num_iters 10 \
                 --iters_inc 10 \
                 --pop_size 1 \
