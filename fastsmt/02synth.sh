@@ -24,13 +24,16 @@
 #--num_valid 100
 
 python synthesis/multi/multi_synthesis.py \
-         --cache cache_mizar.txt \
+         --cache cache_mizar_min2.txt \
          --max_timeout 30 \
          --benchmark_dir examples/mizar/min1/ \
          --num_threads 64 \
-         --strategy_file mizar_strategy_out.txt \
+         --strategy_file mizar_strategy_min2_out.txt \
          --leaf_size 20 \
          --num_strategies 10 \
          --f_lambda 0.5 \
          --num_valid 100 \
-         --input_file mizar_strategies_in.txt
+         --input_file eval/synthesis/mizar_min2/train/10/strategies.txt 
+
+         #--input_file mizar_strategies_in.txt
+

@@ -23,4 +23,4 @@ python synthesis/learning.py experiments/configs/mizar/config_mizar.json \
                 --smt_batch_size 500 \
                 --full_pass 10 \
                 --num_threads 64 \
-                --experiment_name mizar_min1
+                --experiment_name mizar_min2

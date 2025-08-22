@@ -34,7 +34,7 @@
             "nnf",          
             "snf",          
             "ctx-simplify",
-            "aig",
+            "aig"
         ],
         "allowed_params": {
             "simplify": {
@@ -75,8 +75,7 @@
                     "propagate_eq"
                 ],
                 "integer": [
-                   ["max_depth", 1, 2048],
-                   ["max_steps", 1, 4294967290]
+                   ["max_depth", 1, 2048]
                 ]
             }
         }
